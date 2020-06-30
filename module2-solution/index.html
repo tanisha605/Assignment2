@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menus</title>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+    font-family: Helvetica;
+	}
+	h1{
+		text-align: center;
+		margin-bottom: 30px;
+    font-size: 1.75em;
+	}
+	section{
+		height: 150px;
+		background-color: gray;
+		margin-bottom: 15px;
+		margin-right: 15px;
+		padding: 40px 10px 10px 10px;
+		position: relative;
+    overflow: hidden;
+  }
+  .row{
+  	/*width: 100%;*/
+  	margin: 15px;
+  }
+  p{
+  position: absolute;
+  height: 25px;
+	width: 80px;
+	border: 1px solid black;
+	text-align: center;
+	float: right;
+	/*margin-right: -10px;
+	margin-top: -40px;*/
+  top: 0;
+  right: 0;
+  margin-top: 0px;
+  font-size: 1.25em;
+  }
+  .chicken{
+  	background-color: #f4c2c2;
+  }
+  .beef{
+  	background-color: #800000;
+  	color: white;
+  }
+  .sushi{
+  	background-color: white;
+  }
+  
+
+	@media (min-width: 992px){
+	 .col-md-4 {
+    float: left;
+    border: 1px solid black;
+    }
+  
+  .col-md-4 {
+    width: 31%;
+  }
+	}
+	@media (min-width: 768px) and (max-width: 991px){
+	 .col-sm-6, .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-sm-6 {
+    width: 47% ;
+  }
+  .col-sm-12 {
+    width: 96%;
+  }
+}
+
+	@media (max-width: 767px){
+  .col-xs-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-xs-12 {
+    width: 94%;
+  }
+
+	}
+	</style>
+	</head>
+<body>
+<h1>Our Menu</h1>
+<div class="row">
+<section class="col-md-4 col-sm-6 col-xs-12">
+	<p class="chicken">Chicken</p>
+	lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</section>
+
+
+<section class="col-md-4 col-sm-6 col-xs-12">
+	<p class="beef">Beef</p>
+	lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</section>
+
+
+<section class="col-md-4 col-sm-12 col-xs-12">
+	<p class="sushi">Sushi</p>
+	lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</section>
+
+</div>
+</body>
+</html>
